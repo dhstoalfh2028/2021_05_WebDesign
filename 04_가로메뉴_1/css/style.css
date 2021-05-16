@@ -1,0 +1,126 @@
+/*nor*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*cus*/
+.main-page {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+
+/*header*/
+header > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #999;
+}
+
+/*menu*/
+header > .menu {
+    float: right;
+    width: 600px;
+    height: 100px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    background-color: #888;
+}
+
+header > .menu li {
+    float: left;
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+
+header > .menu li a {
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+header > .menu li:hover > a {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+header > .menu li ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: black;
+}
+
+header > .menu li:hover .submenu {
+    display: block;
+}
+
+/*slide*/
+.slide {
+    height: 300px;
+    background-color: #777;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+}
+
+.notice {
+    background-color: #666;
+}
+
+.banner {
+    background-color: #555;
+}
+
+.shortcut {
+    background-color: #444;
+}
+
+/*footer*/
+footer div {
+    float: left;
+}
+
+.foot-logo {
+    width: 250px;
+    height: 100px;
+    float: left;
+    background-color: #333;
+}
+
+.copyright {
+    width: 950px;
+    height: 50px;
+    background-color: #999;
+}
+
+.sns {
+    width: 950px;
+    height: 50px;
+    background-color: #888;
+}
