@@ -46,8 +46,8 @@ header > .menu {
 }
 
 header > .menu li {
-    position: relative;
     float: left;
+    position: relative;
     width: 25%;
     text-align: center;
 }
@@ -55,28 +55,25 @@ header > .menu li {
 header > .menu li a {
     padding: 10px;
     display: block;
+    color: white;
     font-size: 20px;
-    color: #fff;
 }
 
 header > .menu li:hover > a {
     background-color: white;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 header > .menu li ul.submenu {
     display: none;
     position: absolute;
     left: 0;
-    top: 44px;
     background-color: black;
 }
 
-header > .menu li ul.submenu li{
-    width: 100%;
-    
+header > .menu li ul.submenu li {
+    width:100%;
 }
-
 
 /*slide*/
 .slide {
