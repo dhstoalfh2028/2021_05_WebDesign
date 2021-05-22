@@ -41,15 +41,13 @@ header > .logo {
 header > .menu {
     float: right;
     width: 600px;
-    height: 100px;
-    padding-top: 25px;
-    box-sizing: border-box;
+    margin-top: 28px;
     background-color: #888;
 }
 
 header > .menu li {
-    float: left;
     position: relative;
+    float: left;
     width: 25%;
     text-align: center;
 }
@@ -58,23 +56,27 @@ header > .menu li a {
     padding: 10px;
     display: block;
     font-size: 20px;
+    color: #fff;
 }
 
 header > .menu li:hover > a {
     background-color: white;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 header > .menu li ul.submenu {
     display: none;
     position: absolute;
     left: 0;
+    top: 44px;
     background-color: black;
 }
 
-header > .menu li:hover .submenu {
-    display: block;
+header > .menu li ul.submenu li{
+    width: 100%;
+    
 }
+
 
 /*slide*/
 .slide {
