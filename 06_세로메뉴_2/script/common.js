@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".menu>ul>li").hover(
+        function(){
+            $(this).find(".submenu").stop().slideDown(300);
+        },
+        function(){
+            $(this).find(".submenu").stop().slideUp(300);
+        },
+    )
+});
