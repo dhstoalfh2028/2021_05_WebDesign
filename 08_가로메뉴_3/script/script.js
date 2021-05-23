@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $("header>.menu>ul>li").hover(
+        function(){
+            $(".submenu").stop().slideDown(200);
+        },
+        function(){
+            $(".submenu").stop().slideUp(200);
+        }
+    )
+    
+     $("header>.menu>ul>li").hover(
+        function(){
+            $(".menu-bg").stop().slideDown(200);
+        },
+        function(){
+            $(".menu-bg").stop().slideUp(200);
+        }
+    )
+});
