@@ -65,11 +65,9 @@ section {
     color: darkcyan;
     transition: 0.5s;
 }
-/*
 .submenu {
     display: none;
 }
-*/
 .submenu>li>a {
      display: block;
     padding: 10px;
