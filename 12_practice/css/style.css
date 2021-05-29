@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+/*lib*/
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*section*/
+section {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+}
+
+/*logo*/
+header>.logo {
+    width: 200px;
+    height: 100%;
+    background-color: #999;
+    float: left;
+}
+
+/*menu*/
+header >.menu {
+    width: 800px;
+    height: 100%;
+    float: left;
+    background-color: #888;
+    position: relative;
+}
+.mainmenu {
+    width: 100%;
+    height: 50px;
+    background-color: skyblue;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mainmenu>li {
+    float: left;
+    width: 25%;
+}
+.mainmenu>li>a {
+    height: 100%;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s
+}
+.mainmenu>li>a:hover {
+    background-color: darkblue;
+    color: white;
+    transition: 0.5s;
+}
+.submenu {
+    display: none
+}
+.submenu>li {
+    width: 100%;
+    height: 40px;
+}
+.submenu>li>a {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    transition: 0.5s;
+}
+.submenu>li>a:hover {
+    background-color: black;
+    transition: 0.5s
+}
+
+/*slider*/
+.slider {
+    width: 100%;
+    height: 300px;
+    background-color: #777;
+}
+
+/*content*/
+.content {
+    width: 100%;
+    height: 200px;
+}
+.content>div {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+.tab {
+    background-color: #666;
+    overflow: hidden;
+}
+.banner {
+    background-color: #555;
+}
+.shortcut {
+    background-color: #444;
+}
+
+
+/*tab*/
+.tab-btn>button {
+    border: none;
+    padding: 5px 10px;
+}
+.tab1 {
+    background-color: antiquewhite;
+}
+.tab2 {
+    background-color: skyblue;
+}
+.notice {
+    width: 100%;
+    height: 90%;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+}
+.gallery {
+    width: 100%;
+    height: 90%;
+    background-color: skyblue;
+    display: none;
+    padding: 5px 10px;
+}
+.gallery>div {
+    width: 32%;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+    margin-right: 2%;
+    float: left;
+}
+.gallery>div:last-child {
+    margin-right: 0;
+}
+
+/*pop*/
+.notice>p>a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.pop {
+    position: absolute;
+     width: 400px;
+    height: 400px;
+    display: none;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.popup {
+   width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid yellow;
+    color: white;
+    padding: 30px;
+}
+.pop button {
+    position: absolute;
+    bottom: 30px;
+    background-color: white;
+    right: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+}
+.pop button:hover {
+    background-color: yellow;
+    transition: 0.5s;
+    color: red;
+    box-sizing: border-box;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+}
+.foot-logo {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: #999;
+}
+.foot-menu {
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+.foot-menu>div {
+    width: 100%;
+    height: 50px;
+    background-color: #888;
+}
+.foot-menu>.copyright {
+    background-color: #777;
+}
