@@ -1,0 +1,141 @@
+/*nor*/
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*lib*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.actived_tab {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*section*/
+section {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+/*logo*/
+.logo{
+    width: 200px;
+    height: 100%;
+    background-color: #999;
+    float: left;
+}
+
+/*menu*/
+.menu {
+    width: 800px;
+    height: 100%;
+    background-color: #888;
+    float: left;
+}
+
+/*slide*/
+.slide {
+    width: 1000px;
+    height: 300px;
+    background-color: #777;
+    line-height: 300px;
+}
+
+/*banner*/
+.banner {
+    width: 1000px;
+    height: 200px;
+}
+.banner>div {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+.notice {
+    background-color: #666;
+}
+.gallery {
+    background-color: #555;
+}
+.content {
+    background-color: #444;
+}
+
+
+/*tab*/
+.tab-menu {
+   padding: 10px;
+}
+.tab-btn ul {
+    overflow: hidden;
+}
+.tab-btn li {
+    float: left;
+    width: 120px;
+    background-color: palevioletred;
+    text-align: center;
+}
+.tab-btn li:nth-child(2) {
+    background-color: black;
+}
+.tab-btn li a {
+    display: block;
+}
+.tab-con {
+    background-color: palevioletred;
+    text-align: left;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+}
+.foot-left {
+    width: 800px;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+}
+.foot-left div {
+    float: left;
+}
+.foot-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #999;
+}
+.copyright {
+    width: 100%;
+    height: 50px;
+    background-color: #888;
+}
+.foot-logo {
+    width: 200px;
+    height: 100%;
+    background-color: #777;
+    float: left;
+    line-height: 100px;
+}
