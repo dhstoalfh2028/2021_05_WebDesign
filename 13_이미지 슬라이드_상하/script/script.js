@@ -17,20 +17,37 @@ $(document).ready(function () {
         $(".pop").hide();
         $(".bg").hide();
     })
-    
-    $(".bg").click(function(){
+
+    $(".bg").click(function () {
         $(".pop").hide();
         $(".bg").hide();
     })
 
     $(".mainmenu>li").hover(
-        function(){
+        function () {
             $(this).find(".submenu").stop().slideDown(200);
         },
-        function(){
+        function () {
             $(this).find(".submenu").stop().slideUp(200);
         }
-    );
+    )
 
+    function func1() {
+
+        var num = 0;
+        var result;
+        setInterval(function () {
+            result = num * -300;
+            num++;
+            console.log(result);
+            if(num==3){
+                num=0;
+            }
+            $(".slider").stop().animate({
+                top:result+'px'
+            });
+        },3000);
+    }
+    func1();
 
 });
